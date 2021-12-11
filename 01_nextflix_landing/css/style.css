@@ -313,7 +313,7 @@ hr {
 
 .btn-lg {
     font-size: 1.5rem;
-    padding: 1.0rem 1.5rem;
+    padding: 1.0rem 1.5re;
     border-radius: 1px;
 } 
 
@@ -399,7 +399,7 @@ input::placeholder {
 	}
 
     input {
-        display:block;
+        display: block;
         margin-bottom: 1rem;
     }
 
