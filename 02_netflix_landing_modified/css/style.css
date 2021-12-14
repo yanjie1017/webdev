@@ -332,6 +332,7 @@ hr {
     color: #999;
     font-size: 0.8rem;
     margin-top: 1.5rem;
+    pointer-events: none; /* click through? */
 }
 
 @media(max-width: 1000px) {
