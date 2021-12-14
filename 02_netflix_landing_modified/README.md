@@ -13,3 +13,8 @@ Build on Project 01. Different designs in the main content.
 ![](info/img5.png)
 
 ![](info/img6.png)
+
+## Responsive Design - Media Queries
+![](info/img7.png)
+
+![](info/img8.png)
