@@ -1,11 +1,13 @@
 :root {
     --primary-color: #00704A;
+    --dark-color: #00442d;
 }
 
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -17,7 +19,6 @@ body {
 .btn {
     font-size: 0.9rem;
     font-weight: bold;
-    text-decoration: none;
     border-width: 1px;
     border-style: solid;
     border-radius: 20px;
@@ -82,7 +83,7 @@ p {
 }
 
 .slideshow a {
-    font-size: 1.7rem;
+    font-size: 6vw;
 }
 
 .slideshow a:hover {
@@ -90,7 +91,7 @@ p {
 }
 
 .slideshow img {
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
 }
 
@@ -100,13 +101,13 @@ p {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    color: black;
+    color: var(--dark-color);
     text-align: center;
     padding: 20px;
 }
 
 .slideshow .slide-text:visited {
-    color: black;
+    color: var(--dark-color);
 }
 
 .slideshow .slide-text h1 {
@@ -198,6 +199,7 @@ p {
     text-align: center;
     font-size: 1.5rem;
     margin: 3rem auto;
+    padding: 0.5rem 0;
 }
 
 .footer .footer-text h1 {
@@ -223,7 +225,6 @@ p {
 }
 
 /* menu */
-
 /* mobile menu */
 #mobile-menu {
     position: fixed;
@@ -243,16 +244,15 @@ p {
 
 .mobile-menu-wrapper a {
     font-size: 0.7rem;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
 }
 
-.mobile-menu-wrapper .icon.active {
+.mobile-menu-wrapper .mobile-menu-content.active {
     color:var(--primary-color);
 }
 
-.mobile-menu-wrapper .icon p {
+.mobile-menu-wrapper .mobile-menu-content p {
     margin-top: 0.5rem;
 }
 
@@ -260,8 +260,30 @@ p {
     color: #555;
 }
 
-.mobile-menu-wrapper .icon.active a:visited {
+.mobile-menu-wrapper .mobile-menu-content.active a:visited {
     color:var(--primary-color);
+}
+
+/* desktop-menu */
+#desktop-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+
+#desktop-menu img {
+    height: 60px;
+}
+
+#desktop-menu .desktop-menu-content {
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+/* navigation */
+.nav {
+    display: none;
 }
 
 @media(min-width: 700px) {
@@ -274,31 +296,15 @@ p {
     }
 
     .slideshow .slide-text {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        color: black;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .slideshow .slide-text:visited {
-        color: black;
-    }
-    
-    .slideshow .slide-text h1 {
-        font-size: 1.0em;
-        text-transform: uppercase;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 55%;
+        text-align: left;
     }
     
     .slideshow .slide-text p {
-        font-size: 0.6em;
-        line-height: 1.3em;
-        width: 80%;
-        margin: 0.5em auto;
+        margin: 0.5em 0;
     }
 
     .card-grid {
@@ -316,9 +322,6 @@ p {
     .footer .footer-text p {
         margin: 1.2em 0 1.7em;
     }
-    
-
-    
 
     #mobile-menu {
         display: none;
