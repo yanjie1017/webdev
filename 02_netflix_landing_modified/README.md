@@ -1,4 +1,4 @@
-# 02: Modified Netflix Landing Page (SG 2021 version)
+# 02: Modified Netflix Landing Page Clone (SG 2021 version)
 
 Build on Project 01. Different designs in the main content.
 

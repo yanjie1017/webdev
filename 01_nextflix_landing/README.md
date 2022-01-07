@@ -1,4 +1,4 @@
-# 01: Netflix Landing Page
+# 01: Netflix Landing Page Clone
 
 Followed the tutorial on [Traversy Media on YouTube](https://www.youtube.com/watch?v=P7t13SGytRk&ab_channel=TraversyMedia) and made some minor changes according to the latest design. 
 
