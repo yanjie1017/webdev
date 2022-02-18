@@ -1,6 +1,6 @@
 # 02: Modified Netflix Landing Page Clone (SG 2021 version)
 
-Build on Project 01. Different designs in the main content.
+Build on Project 01 based on the design of SG 2021 version. Website is made responsive with media queries.
 
 ![](info/img1.png)
 
