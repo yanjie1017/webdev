@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rebeccapurple;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.pw-container {
+    min-width: 400px;
+    background-color: rgb(52, 11, 92);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rgb(77, 29, 124);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 2rem;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.pw button {
+    background-color: white;
+    border: none;
+    color: rgb(7, 46, 0);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    transform: translate(0, -50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+    z-index: 2;
+}
+
+.form-control {
+    color: rgb(233, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+#generate {
+    background-color: #ecb602;
+    color: rgb(52, 11, 92);
+    display: block;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
